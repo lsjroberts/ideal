@@ -8,9 +8,9 @@ Static components or a fully stateless app will compile into plain HTML & CSS, a
 
 ### Examples
 
-- [Counter](examples/counter/counter.js)
-- [Events](examples/events/events.js)
-- [Components](examples/components/components.js)
+- [Counter](examples/counter)
+- [Events](examples/events)
+- [Components](examples/components)
 
 ```js
 // A complete counter app which outputs html, css and js
