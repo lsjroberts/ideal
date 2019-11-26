@@ -19,7 +19,7 @@ export default withState(
           [centerX(), centerY(), spacing(10)],
           withEventListener('click', cmd.incrementInside, [
             el([], text`Clicked ${state.count} times`),
-            el([], text`Clicked inside ${state.count} times`),
+            el([], text`Clicked inside ${state.countInside} times`),
             el([], text`Mouse: ${state.x}, ${state.y}`),
           ]),
         ),
