@@ -1,5 +1,5 @@
 export default withState(
-  { count: 0, clickedInside: 0, x: 0, y: 0 },
+  { count: 0, countInside: 0, x: 0, y: 0 },
   {
     increment: state => (state.count += 1),
     incrementInside: state => (state.countInside += 1),
