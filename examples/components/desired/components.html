@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/immer/dist/immer.umd.js"></script>
+    <script src="https://unpkg.com/html-parsed-element/min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/reset-css/reset.css" />
+    <template id="template_components">
+      <style>
+        @import url('../../ideal.css');
+        @import url('components.css');
+      </style>
+      <div class="s c cx w-600 p-30">
+        <i-header></i-header>
+        <i-counter initial="0">
+          <span slot="t0">0</span>
+        </i-counter>
+        <i-counter initial="100">
+          <span slot="t0">100</span>
+        </i-counter>
+      </div>
+    </template>
+    <template id="template_header">
+      <style>
+        @import url('../../ideal.css');
+      </style>
+      <div class="s r">
+        <div class="s e">Header</div>
+        <div class="s e ar">Menu</div>
+      </div>
+    </template>
+    <template id="template_counter">
+      <style>
+        @import url('../../ideal.css');
+        @import url('counter.css');
+      </style>
+      <div class="s c wc cx cy">
+        <button data-id="button0">Count: <slot name="t0"></slot></button>
+      </div>
+    </template>
+    <script src="../../ideal.js"></script>
+    <script src="components.js"></script>
+    <script src="header.js"></script>
+    <script src="counter.js"></script>
+  </head>
+  <body>
+    <i-components></i-components>
+  </body>
+</html>

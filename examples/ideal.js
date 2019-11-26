@@ -6,6 +6,8 @@ class IdealElement extends HTMLParsedElement {
     this.root.appendChild(this.template.cloneNode(true));
   }
 
+  mount() {}
+
   parsedCallback() {
     this.mount();
   }
@@ -23,5 +25,10 @@ class StatefulElement extends IdealElement {
 
     this.state = next;
     this.props(patches, next);
+  }
+
+  produce(reducer) {
+    const next = immer.produce(this.state, reducer);
+    this.state = next;
   }
 }
