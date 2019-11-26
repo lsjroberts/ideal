@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/immer/dist/immer.umd.js"></script>
+    <template id="template_counter">
+      <style>
+        @import url('counter.css');
+      </style>
+      <div class="s c">
+        <button class="s e wc" data-id="button0">+</button>
+        <button class="s e wc aaaaaa" data-id="button1">-</button>
+        <div class="s e wc aaaaaa"><slot name="t0"></slot></div>
+      </div>
+    </template>
+    <script src="ideal.js"></script>
+    <script src="counter.js"></script>
+  </head>
+  <body>
+    <i-counter>
+      <span slot="t0">Count: 0</span>
+    </i-counter>
+  </body>
+</html>

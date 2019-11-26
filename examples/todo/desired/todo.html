@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/immer/dist/immer.umd.js"></script>
+    <template id="template_todo">
+      <style>
+        @import url('todo.css');
+      </style>
+      <div class="s c">
+        <slot name="todos-map0"></slot>
+      </div>
+    </template>
+    <template id="template_todo__todos_map0">
+      <style>
+        @import url('todo.css');
+      </style>
+      <div class="s r aaaaaa">
+        <div class="s e" data-id="e0"><slot name="t0"></slot></div>
+        <button class="s e" data-id="button0">✓</button>
+      </div>
+    </template>
+    <script src="ideal.js"></script>
+    <script src="todo.js"></script>
+  </head>
+  <body>
+    <i-todo>
+      <span slot="todos-map0"
+        ><i-todo--todos-map0>
+          <span slot="t0">Finish building ideal ui</span> </i-todo--todos-map0
+        ><i-todo--todos-map0>
+          <span slot="t0">Go to the gym</span>
+        </i-todo--todos-map0></span
+      >
+    </i-todo>
+  </body>
+</html>

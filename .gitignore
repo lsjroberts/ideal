@@ -1,0 +1,8 @@
+.DS_Store
+.vscode
+node_modules
+
+dist
+
+examples/**/tsconfig.json
+examples/**/dist

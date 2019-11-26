@@ -1,0 +1,44 @@
+.s {
+  position: relative;
+  border: none;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  resize: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  border-style: solid;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  line-height: 1;
+  font-weight: inherit;
+  text-decoration: none;
+  font-style: inherit;
+}
+
+.s.e {
+  display: flex;
+  flex-direction: column;
+  white-space: pre;
+}
+
+.s.wc {
+  width: auto;
+}
+
+.c {
+  display: flex;
+  flex-direction: column;
+}
+
+.s.c > .wc {
+  align-self: flex-start;
+}
+
+.aaaaaa {
+  margin-top: 10px;
+}
