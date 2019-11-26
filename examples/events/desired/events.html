@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/immer/dist/immer.umd.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/reset-css/reset.css" />
+    <template id="template_events">
+      <style>
+        @import url('events.css');
+      </style>
+      <div class="s c wc cx cy">
+        <div class="e">Clicked <slot name="t0"></slot> times</div>
+        <div class="e aaaaaa">Clicked inside <slot name="t1"></slot> times</div>
+        <div class="e aaaaaa">
+          Mouse: <slot name="t2"></slot>, <slot name="t3"></slot>
+        </div>
+      </div>
+    </template>
+    <script src="ideal.js"></script>
+    <script src="events.js"></script>
+  </head>
+  <body>
+    <i-events>
+      <span slot="t0">0</span>
+      <span slot="t1">0</span>
+      <span slot="t2">0</span>
+      <span slot="t3">0</span>
+    </i-events>
+  </body>
+</html>
