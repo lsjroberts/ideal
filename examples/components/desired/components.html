@@ -1,7 +1,5 @@
 <html>
   <head>
-    <script src="https://unpkg.com/immer/dist/immer.umd.js"></script>
-    <script src="https://unpkg.com/html-parsed-element/min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/reset-css/reset.css" />
     <template id="template_components">
       <style>
@@ -36,12 +34,14 @@
         <button data-id="button0">Count: <slot name="t0"></slot></button>
       </div>
     </template>
+  </head>
+  <body>
+    <i-components></i-components>
+    <script src="https://unpkg.com/immer/dist/immer.umd.js"></script>
+    <script src="https://unpkg.com/html-parsed-element/min.js"></script>
     <script src="../../ideal.js"></script>
     <script src="components.js"></script>
     <script src="header.js"></script>
     <script src="counter.js"></script>
-  </head>
-  <body>
-    <i-components></i-components>
   </body>
 </html>
