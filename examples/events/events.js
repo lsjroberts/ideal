@@ -14,7 +14,7 @@ export default withState(
       cmd.increment,
       withEventListener(
         'mousemove',
-        cmd.update,
+        cmd.move,
         columns(
           [centerX(), centerY(), spacing(10)],
           withEventListener('click', cmd.incrementInside, [
