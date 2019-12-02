@@ -10,7 +10,9 @@ Static components or a fully stateless app will compile into plain HTML & CSS, a
 
 - [Counter](examples/counter)
 - [Events](examples/events)
+- [Observables](examples/observables)
 - [Components](examples/components)
+- [Data Grid](examples/grid) with streaming data, filters, sorting, selection and actions
 
 ```js
 // A complete counter app which outputs html, css and js
