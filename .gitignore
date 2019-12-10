@@ -3,6 +3,7 @@
 node_modules
 
 dist
+spec/**/actual
 
 examples/**/tsconfig.json
 examples/**/dist
