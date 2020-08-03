@@ -1,7 +1,5 @@
 <html>
   <head>
-    <script src="https://unpkg.com/immer/dist/immer.umd.js"></script>
-    <script src="https://unpkg.com/html-parsed-element/min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/reset-css/reset.css" />
     <template id="template_counter">
       <style>
@@ -13,12 +11,14 @@
         <div class="s e wc aaaaaa">Count: <slot name="t0"></slot></div>
       </div>
     </template>
-    <script src="../../ideal.js"></script>
-    <script src="counter.js"></script>
   </head>
   <body>
     <i-counter>
       <span slot="t0">0</span>
     </i-counter>
+    <script src="https://unpkg.com/immer@7.0.7/dist/immer.umd.development.js"></script>
+    <script src="https://unpkg.com/html-parsed-element@0.4.0/min.js"></script>
+    <script src="../../ideal.js"></script>
+    <script src="counter.js"></script>
   </body>
 </html>

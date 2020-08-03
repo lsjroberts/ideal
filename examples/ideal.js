@@ -19,7 +19,7 @@ class IdealElement extends HTMLParsedElement {
 
 class StatefulElement extends IdealElement {
   update(action) {
-    const [next, patches] = immer.produceWithPatches(this.state, draft => {
+    const [next, patches] = immer.produceWithPatches(this.state, (draft) => {
       this.actions[action.type](draft, action.payload);
     });
 
@@ -49,7 +49,7 @@ class ObservableElement extends StatefulElement {
   }
 
   mount() {
-    this.observer = this.observable.subscribe(payload => {
+    this.observer = this.observable.subscribe((payload) => {
       this.update({ type: 'next', payload });
     });
   }
@@ -59,7 +59,7 @@ class ObservableElement extends StatefulElement {
   }
 
   props(patches, next) {
-    patches.forEach(patch => {
+    patches.forEach((patch) => {
       if (patch.path[0] === 'value') {
         this.subscribe(next.value);
       }
@@ -68,3 +68,7 @@ class ObservableElement extends StatefulElement {
 
   subscribe(next) {}
 }
+
+// ---
+
+immer.enablePatches();
